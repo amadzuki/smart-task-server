@@ -1,6 +1,9 @@
 node_modules
 
-//environment
+# Environment
 .env.local
 .env.development.local
 .env.production.local
+
+# Rest Client
+example.http
