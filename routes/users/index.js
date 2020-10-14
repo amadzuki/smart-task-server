@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
+router.get('/', (req, res, next) => {
   res.status(200).send({ message: 'List of all users', data: [] })
 })
 
