@@ -11,4 +11,12 @@ router.post(
   auth.registerNewUser
 )
 
+// Login
+router.post(
+  '/login',
+  auth.isEmailRegistered,
+  auth.isPasswordCorrect,
+  auth.authenticateUser
+)
+
 module.exports = router

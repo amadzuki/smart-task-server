@@ -1,10 +1,10 @@
 module.exports = {
-  authenticateUser: null,
+  authenticateUser: require('./authenticateUser'),
   deauthenticateUser: null,
   getAuthenticatedUser: null,
   isAuthenticated: null,
   isAuthorized: null,
-  isPasswordCorrect: null,
+  isPasswordCorrect: require('./isPasswordCorrect'),
   isEmailRegistered: require('./isEmailRegistered'),
   isNameRegistered: require('./isNameRegistered'),
   registerNewUser: require('./registerNewUser'),

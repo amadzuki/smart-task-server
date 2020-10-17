@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const Task = require('./middlewares')
+const task = require('./middlewares')
 
-router.get('/', Task.getAll)
+router.get('/', task.getAll)
 
 module.exports = router

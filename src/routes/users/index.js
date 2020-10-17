@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const User = require('./middlewares')
+const user = require('./middlewares')
 
 /* GET users listing. */
-router.get('/', User.getAll)
+router.get('/', user.getAll)
 
 module.exports = router
