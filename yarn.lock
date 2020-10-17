@@ -1233,7 +1233,7 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
-lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.5:
+lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.5:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -1849,6 +1849,14 @@ sequelize-cli@^6.2.0:
     umzug "^2.3.0"
     yargs "^13.1.0"
 
+sequelize-interval-postgres@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/sequelize-interval-postgres/-/sequelize-interval-postgres-1.0.0.tgz#9aa8182bddaa3c968915f21065b2c391b0d229f2"
+  integrity sha512-sexcv1PjdIMQbD9x7ZXmSgDjsm+WRjpeiqGZXUJ5jWy0lQSu8Z/iUualR1PC40E+EWPAyJlrGpHAj/fF/CmEsQ==
+  dependencies:
+    lodash "^4.17.10"
+    util "^0.11.0"
+
 sequelize-pool@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-6.1.0.tgz#caaa0c1e324d3c2c3a399fed2c7998970925d668"
@@ -2159,6 +2167,13 @@ url-parse-lax@^3.0.0:
   integrity sha1-FrXK/Afb42dsGxmZF3gj1lA6yww=
   dependencies:
     prepend-http "^2.0.0"
+
+util@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.11.1.tgz#3236733720ec64bb27f6e26f421aaa2e1b588d61"
+  integrity sha512-HShAsny+zS2TZfaXxD9tYj4HQGlBezXZMZuM/S5PKLLoZkShZiGk9o5CzukI1LVHZvjdvZ2Sj1aW/Ndn2NB/HQ==
+  dependencies:
+    inherits "2.0.3"
 
 utils-merge@1.0.1:
   version "1.0.1"
