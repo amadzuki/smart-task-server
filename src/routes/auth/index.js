@@ -3,6 +3,9 @@ const router = express.Router()
 
 const auth = require('./middlewares')
 
+// Get User Profile
+router.get('/profile', auth.isAuthenticated, auth.getAuthenticatedUser)
+
 // Register new user
 router.post(
   '/register',
@@ -18,5 +21,8 @@ router.post(
   auth.isPasswordCorrect,
   auth.authenticateUser
 )
+
+//Logout
+router.post('/logout', auth.isAuthenticated, auth.deauthenticateUser)
 
 module.exports = router
