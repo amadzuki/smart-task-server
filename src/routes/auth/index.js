@@ -3,9 +3,12 @@ const router = express.Router()
 
 const auth = require('./middlewares')
 
-/* GET users listing. */
-router.get('/', (req, res, next) => {
-  res.status(200).send({ message: 'List of all users', data: [] })
-})
+// Register new user
+router.post(
+  '/register',
+  auth.isEmailRegistered,
+  auth.isNameRegistered,
+  auth.registerNewUser
+)
 
 module.exports = router
