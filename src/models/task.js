@@ -10,7 +10,6 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     Task.belongsTo(models.user, {
       foreignKey: 'userId',
-      as: 'user',
       onDelete: 'CASCADE',
     })
   }
