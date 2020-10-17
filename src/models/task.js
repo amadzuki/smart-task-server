@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: 'userId',
       onDelete: 'CASCADE',
     })
+    Task.hasMany(models.subtask)
   }
   return Task
 }
