@@ -1,8 +1,7 @@
 const express = require('express')
 const router = express.Router()
+const Task = require('./middlewares')
 
-router.get('/', (req, res, next) => {
-  res.status(200).send({ message: 'List of all tasks' })
-})
+router.get('/', Task.getAll)
 
 module.exports = router
