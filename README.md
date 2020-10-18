@@ -39,11 +39,12 @@
 
 ### Tasks
 
-| HTTP   | Endpoint     | Description                          | Header                      |
-| ------ | ------------ | ------------------------------------ | --------------------------- |
-| `GET`  | `/tasks`     | Get all tasks and its user           | X-API-Key                   |
-| `GET`  | `/tasks/:id` | Get task by id and show its subtasks | X-API-Key                   |
-| `POST` | `/tasks`     | Add new task                         | Authorization: bearer token |
+| HTTP   | Endpoint              | Description                          | Header                      |
+| ------ | --------------------- | ------------------------------------ | --------------------------- |
+| `GET`  | `/tasks`              | Get all tasks and its user           | X-API-Key                   |
+| `GET`  | `/tasks/:id`          | Get task by id and show its subtasks | X-API-Key                   |
+| `GET`  | `/tasks/list?{query}` | Get task queried by time or location | Authorization: bearer token |
+| `POST` | `/tasks`              | Add new task by single string        | Authorization: bearer token |
 
 ## Installation
 
