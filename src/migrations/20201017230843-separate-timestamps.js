@@ -11,6 +11,7 @@ module.exports = {
       queryInterface.addColumn('tasks', 'taskDate', {
         type: Sequelize.DATEONLY,
         defaultValue: Sequelize.NOW,
+        allowNull: false,
       }),
     ])
   },
