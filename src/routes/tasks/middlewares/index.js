@@ -4,5 +4,6 @@ module.exports = {
   taskCapture: require('./taskCapture'),
   dateCapture: require('./dateCapture'),
   timeCapture: require('./timeCapture'),
+  getDataFromBody: require('./getDataFromBody'),
   addNewTask: require('./addNewTask'),
 }
