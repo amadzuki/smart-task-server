@@ -6,7 +6,7 @@ module.exports = (sequelize, SequelizeDataTypes) => {
   const DataTypes = withInterval(SequelizeDataTypes)
 
   const SubTask = sequelize.define(
-    'subtasks',
+    'subtask',
     {
       subTask: DataTypes.STRING,
       subTaskStart: DataTypes.INTEGER,
