@@ -13,6 +13,10 @@
 
 ---
 
+## TLDR
+
+This project is API express with ORM sequelize using PostgreSQL. I've set the migration and seed with steps I wrote in this README. And I also managed to implement auth endpoints with hashed password using bcrypt and token using jsonwebtoken. Other endpoints is also secured by API-Key. But unfortunately I didn't manage to finish implementing add new task. Well, it's actually my first time using ORM sequelize PostgreSQL and it was fun. Thank you for the interesting test.
+
 ## API Endpoints
 
 ### Index
