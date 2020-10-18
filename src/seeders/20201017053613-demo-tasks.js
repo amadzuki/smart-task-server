@@ -11,7 +11,8 @@ module.exports = {
       [
         {
           task: 'Create name and logo',
-          taskStart: '2020-10-15 07:00:00+07',
+          taskDate: new Date(),
+          taskStart: '07:00:00',
           taskDuration: '00:30:00',
           location: 'Home',
           userId: 1,
@@ -20,7 +21,8 @@ module.exports = {
         },
         {
           task: 'Design mockup in Figma',
-          taskStart: '2020-10-15 07:00:00+07',
+          taskDate: new Date(),
+          taskStart: '07:00:00',
           taskDuration: '00:45:00',
           location: 'Home',
           userId: 2,
@@ -29,7 +31,8 @@ module.exports = {
         },
         {
           task: 'Create scaffold template for web',
-          taskStart: '2020-10-15 10:00:00+07',
+          taskDate: new Date(),
+          taskStart: '10:00:00',
           taskDuration: '01:30:00',
           location: 'Office',
           userId: 3,
@@ -38,7 +41,8 @@ module.exports = {
         },
         {
           task: 'Create scaffold template for API',
-          taskStart: '2020-10-15 10:00:00+07',
+          taskDate: new Date(),
+          taskStart: '13:00:00',
           taskDuration: '02:00:00',
           location: 'Office',
           userId: 4,
@@ -47,7 +51,8 @@ module.exports = {
         },
         {
           task: 'Collect asset images',
-          taskStart: '2020-10-15 13:00:00+07',
+          taskDate: new Date(),
+          taskStart: '13:00:00',
           taskDuration: '00:30:00',
           location: 'Home',
           userId: 5,
@@ -56,7 +61,8 @@ module.exports = {
         },
         {
           task: 'Supervise the project progress',
-          taskStart: '2020-10-15 20:00:00+07',
+          taskDate: new Date(),
+          taskStart: '20:00:00',
           taskDuration: '00:30:00',
           location: 'Home',
           userId: 1,
