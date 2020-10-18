@@ -10,7 +10,7 @@ module.exports = {
       queryInterface.changeColumn('tasks', 'taskStart', Sequelize.TIME),
       queryInterface.addColumn('tasks', 'taskDate', {
         type: Sequelize.DATEONLY,
-        defaultValue: Sequelize.NOW,
+        defaultValue: new Date(),
         allowNull: false,
       }),
     ])
