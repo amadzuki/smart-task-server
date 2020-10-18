@@ -13,6 +13,38 @@
 
 ---
 
+## API Endpoints
+
+### Index
+
+| HTTP  | Endpoint | Description       |
+| ----- | -------- | ----------------- |
+| `GET` | `/`      | Show info message |
+
+### Auth
+
+| Endpoint         | HTTP   | Description                   | Header                      |
+| ---------------- | ------ | ----------------------------- | --------------------------- |
+| `/auth/register` | `POST` | Register new user             |                             |
+| `/auth/login`    | `POST` | Login to existing user        | Authorization: bearer token |
+| `/auth/profile`  | `GET`  | Show authenticated user data  | Authorization: bearer token |
+| `/auth/logout`   | `POST` | Logout the authenticated user | Authorization: bearer token |
+
+### Users
+
+| HTTP  | Endpoint       | Description                                      | Header    |
+| ----- | -------------- | ------------------------------------------------ | --------- |
+| `GET` | `/users`       | Get all users name                               | X-API-Key |
+| `GET` | `/users/tasks` | Get all users name and their corresponding tasks | X-API-Key |
+
+### Tasks
+
+| HTTP   | Endpoint     | Description                          | Header                      |
+| ------ | ------------ | ------------------------------------ | --------------------------- |
+| `GET`  | `/tasks`     | Get all tasks and its user           | X-API-Key                   |
+| `GET`  | `/tasks/:id` | Get task by id and show its subtasks | X-API-Key                   |
+| `POST` | `/tasks`     | Add new task                         | Authorization: bearer token |
+
 ## Installation
 
 ### Install dependencies
@@ -41,6 +73,8 @@ After installing dependencies, `.env` file will be automatically generated.
 
 Edit the `.env` file according to your database configuration.
 
+From this:
+
 ```
 DB_USERNAME=
 DB_PASSWORD=
@@ -51,7 +85,7 @@ SECRET_KEY=
 API_KEY=
 ```
 
-Becomes like this:
+To something like this:
 
 ```
 DB_USERNAME=username
