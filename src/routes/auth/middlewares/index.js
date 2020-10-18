@@ -8,4 +8,5 @@ module.exports = {
   isEmailRegistered: require('./isEmailRegistered'),
   isNameRegistered: require('./isNameRegistered'),
   registerNewUser: require('./registerNewUser'),
+  isApiKeyMatched: require('./isApiKeyMatched'),
 }
