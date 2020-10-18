@@ -6,5 +6,5 @@ module.exports = async (req, res) => {
     attributes: ['name'],
   })
 
-  res.status(200).send({ message: 'List of all users', data: users })
+  res.status(200).send({ message: 'List of all users name', data: users })
 }
