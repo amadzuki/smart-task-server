@@ -1,9 +1,14 @@
 'use strict'
-module.exports = (sequelize, DataTypes) => {
+const withInterval = require('sequelize-interval-postgres')
+module.exports = (sequelize, SequelizeDataTypes) => {
+  const DataTypes = withInterval(SequelizeDataTypes)
+
   const Task = sequelize.define('task', {
     task: DataTypes.STRING,
-    taskStart: DataTypes.DATE,
-    taskDuration: DataTypes.RANGE,
+    taskDate: DataTypes.DATE,
+    taskStart: DataTypes.TIME,
+    taskDuration: DataTypes.INTERVAL,
+    location: DataTypes.STRING,
     userId: DataTypes.INTEGER,
   })
   Task.associate = function (models) {
