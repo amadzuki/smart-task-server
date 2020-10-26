@@ -5,16 +5,13 @@ module.exports = (req, res, next) => {
   const taskString = req.body.string
   const isAmPmMatched = amPmRegex.test(taskString)
   const isTwentyFourMatched = twentyFourRegex.test(taskString)
-  console.log(isAmPmMatched, isTwentyFourMatched)
   if (isAmPmMatched) {
     const time = taskString.match(amPmRegex)
     req.newTaskData.taskStart = time[0]
-    console.log(req.newTaskData)
     next()
   } else if (isTwentyFourMatched) {
     const time = taskString.match(twentyFourRegex)
     req.newTaskData.taskStart = time[0]
-    console.log(req.newTaskData)
     next()
   } else {
     next()

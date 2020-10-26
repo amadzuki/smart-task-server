@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
     location: location,
     userId: userId,
   }
-
+  console.log(newTask)
   const createdTask = await Task.create(newTask)
 
   res
