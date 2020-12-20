@@ -23,12 +23,12 @@
     "morgan": "~1.9.1",
     "pg": "^8.4.1",
     "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
     "sequelize-interval-postgres": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.13.0",
-    "nodemon": "^2.0.5",
-    "sequelize-cli": "^6.2.0"
+    "nodemon": "^2.0.5"
   }
 }
